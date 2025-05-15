@@ -72,6 +72,7 @@ git clone --depth 1 https://github.com/ophub/luci-app-amlogic amlogic1 && mv -n 
 git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/packages" "immpack" net/zerotier
 git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-zerotier
 git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
+sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
 
 sed -i \
 -e 's?include \.\./\.\./\(lang\|devel\|net\|utils)?include $(TOPDIR)/feeds/packages/\1?' \

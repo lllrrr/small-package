@@ -77,7 +77,7 @@ git_sparse_clone master "https://github.com/coolsnowwolf/packages" "ledepack" ne
 git_sparse_clone master "https://github.com/coolsnowwolf/luci" "ledeluci" applications/luci-app-autoreboot applications/luci-app-frpc applications/luci-app-frps
 
 sed -i \
--e 's?include \.\./\.\./\(lang\|devel\|net\|utils)?include $(TOPDIR)/feeds/packages/\1?' \
+-e 's?include \.\./\.\./\(lang\|devel\|net\|utils\)?include $(TOPDIR)/feeds/packages/\1?' \
 -e 's?\.\./\.\./luci.mk?$(TOPDIR)/feeds/luci/luci.mk?' \
 */Makefile
 

@@ -43,6 +43,8 @@ sed -i '23,24d' luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
 git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
 git_sparse_clone main "https://github.com/kiddin9/kwrt-packages" "kwrt-packages" luci-app-bypass
 git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
+git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns
+git clone --depth 1 https://github.com/pymumu/luci-app-smartdns
 git clone --depth 1 https://github.com/yichya/luci-app-xray
 git clone --depth 1 https://github.com/liudf0716/luci-app-xfrpc
 git clone --depth 1 https://github.com/lmq8267/luci-app-vnt vnt1 && mv -n vnt1/*vnt* ./; rm -rf vnt1

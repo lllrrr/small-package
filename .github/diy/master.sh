@@ -73,6 +73,8 @@ git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/packages" "immpac
 git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" "immluci" applications/luci-app-zerotier
 git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
 sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
+git_sparse_clone master "https://github.com/coolsnowwolf/packages" "ledepack" net/frp
+git_sparse_clone master "https://github.com/coolsnowwolf/luci" "ledeluci" applications/luci-app-frc applications/luci-app-frps
 
 sed -i \
 -e 's?include \.\./\.\./\(lang\|devel\|net\|utils)?include $(TOPDIR)/feeds/packages/\1?' \

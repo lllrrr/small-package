@@ -35,6 +35,8 @@ git clone --depth 1 https://github.com/vernesong/OpenClash && mv -n OpenClash/lu
 git clone --depth 1 https://github.com/destan19/OpenAppFilter && mvdir OpenAppFilter
 git clone --depth 1 https://github.com/lisaac/luci-app-diskman diskman && mv -n diskman/applications/luci-app-diskman ./; rm -rf diskman
 git clone --depth 1 https://github.com/lisaac/luci-app-dockerman dockerman && mv -n dockerman/applications/luci-app-dockerman ./; rm -rf dockerman
+sed -i 's/40)/45)/g' luci-app-dockerman/luasrc/controller/dockerman.lua
+sed -i '21,22d' luci-app-dockerman/luasrc/model/cbi/dockerman/overview.lua
 git clone --depth 1 https://github.com/lisaac/luci-lib-docker libdocker && mv -n libdocker/collections/luci-lib-docker ./; rm -rf libdocker
 git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon
 sed -i '23,24d' luci-theme-argon/luasrc/view/themes/argon/footer.htm

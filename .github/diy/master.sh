@@ -41,8 +41,8 @@ git clone --depth 1 https://github.com/lisaac/luci-lib-docker libdocker && mv -n
 git clone --depth 1 https://github.com/jerrykuku/luci-theme-argon
 sed -i '23,24d' luci-theme-argon/luasrc/view/themes/argon/footer.htm
 sed -i '23,24d' luci-theme-argon/luasrc/view/themes/argon/footer_login.htm
-#git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" luci-app-wizard
-git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
+git_sparse_clone master "https://github.com/x-wrt/com.x-wrt" "x-wrt" luci-app-wizard
+#git clone --depth 1 https://github.com/kiddin9/luci-app-wizard
 git_sparse_clone main "https://github.com/kiddin9/kwrt-packages" "kwrt-packages" luci-app-bypass
 git clone --depth 1 https://github.com/kiddin9/luci-app-dnsfilter
 git clone --depth 1 https://github.com/pymumu/openwrt-smartdns smartdns

@@ -22,7 +22,7 @@ rm -rf $1
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall && mv -n openwrt-passwall/luci-app-passwall ./; rm -rf openwrt-passwall
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall2 && mv -n openwrt-passwall2/luci-app-passwall2 ./; rm -rf openwrt-passwall2
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages && mvdir openwrt-passwall-packages
-git clone --depth 1 https://github.com/fw876/helloworld && mv -n helloworld/luci-app-ssr-plus ./; rm -rf helloworld
+git clone --depth 1 https://github.com/fw876/helloworld && mv -n helloworld/{luci-app-ssr-plus,dns2socks-rust,dns2tcp,dnsproxy,gn,lua-neturl,redsocks2,shadow-tls,trojan,v2raya,v2ray-core} ./; rm -rf helloworld
 git clone --depth 1 https://github.com/tty228/luci-app-wechatpush
 #git clone -b openwrt-18.06 --depth 1 https://github.com/tty228/luci-app-wechatpush luci-app-serverchan
 git clone --depth 1 https://github.com/sbwml/luci-app-alist alist1 && mv -n alist1/*alist ./; rm -rf alist1

@@ -78,7 +78,7 @@ git_sparse_clone openwrt-24.10 "https://github.com/immortalwrt/luci" "immluci" a
 git_sparse_clone openwrt-24.10 "https://github.com/openwrt/packages" "24packages" net/curl
 sed -i 's/default LIBCURL_MBEDTLS/default LIBCURL_OPENSSL/g' curl/Config.in
 git_sparse_clone master "https://github.com/coolsnowwolf/packages" "ledepack" net/frp
-git_sparse_clone master "https://github.com/coolsnowwolf/luci" "ledeluci" applications/luci-app-autoreboot applications/luci-app-frpc applications/luci-app-frps
+git_sparse_clone master "https://github.com/coolsnowwolf/luci" "ledeluci" applications/luci-app-frpc applications/luci-app-frps
 git_sparse_clone other "https://github.com/Lienol/openwrt-package" "lienol" lean/luci-app-autoreboot
 
 sed -i \
